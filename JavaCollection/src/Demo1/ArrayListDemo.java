@@ -1,6 +1,7 @@
 package Demo1;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArrayListDemo {
 
@@ -14,6 +15,12 @@ public class ArrayListDemo {
 		
 	
 		System.out.println(l1);
+		Iterator itr = l1.iterator();
+		while(itr.hasNext())
+		{
+			System.out.println(itr.next());
+		}
+		
 		
 		System.out.println(l1.add("aaa"));
 		
@@ -25,8 +32,11 @@ public class ArrayListDemo {
 		
 		System.out.println(l1.size());
 		
+			
 		l1.clear();
 		System.out.println(l1);
+		
+		
 		
 		ArrayList l2 =new ArrayList();
 		l2.add(400);
@@ -34,7 +44,7 @@ public class ArrayListDemo {
 		l2.add(600);
 		l2.add("b");
 		
-		System.out.println(l2);
+		System.out.println(l2);	
 		l2.remove("b");
 		l2.remove(0);
 		System.out.println(l2);
@@ -54,7 +64,6 @@ public class ArrayListDemo {
 		
 		System.out.println(l3);
 		System.out.println(l4);
-		
 	}
 
 }
